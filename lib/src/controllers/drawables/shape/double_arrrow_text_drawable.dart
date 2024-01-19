@@ -9,12 +9,12 @@ import '../../../extensions/paint_copy_extension.dart';
 class DoubleArrowTextDrawable extends Sized1DDrawable implements ShapeDrawable {
   /// The paint to be used for the line drawable.
   @override
+  Paint paint;
 
   /// The size of the arrow head.
   ///
   /// If null, the arrow head size will be 3 times the [paint] strokeWidth.
   double? arrowHeadSize;
-  Paint paint;
   String? text;
 
   /// Creates a new [DoubleArrowTextDrawable] with the given [length], [paint] and [arrowHeadSize].

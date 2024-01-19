@@ -1,3 +1,7 @@
+## [1.0.3]
+* Changed the deprecated accent color.
+* Removed unsued import.
+
 ## [1.0.2]
 * Added `DoubleArrowTextDrawable`, simply it's double arrow with text in the middle.
 

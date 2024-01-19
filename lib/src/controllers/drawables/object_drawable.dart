@@ -1,9 +1,8 @@
-import 'dart:ui';
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 
 import 'drawable.dart';
-
-import 'dart:math';
 
 /// An abstract drawable that can be moved and rotated and scaled.
 abstract class ObjectDrawable extends Drawable {

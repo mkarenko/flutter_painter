@@ -1,10 +1,8 @@
 export 'free_style_settings.dart';
 
-import 'package:flutter/material.dart';
-import 'scale_settings.dart';
-import 'shape_settings.dart';
-import 'object_settings.dart';
 import 'settings.dart';
+
+import 'package:flutter/material.dart';
 
 /// Represents all the settings used to create and draw drawables.
 @immutable
