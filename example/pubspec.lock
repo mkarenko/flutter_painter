@@ -65,10 +65,12 @@ packages:
   flutter_painter:
     dependency: "direct main"
     description:
-      path: ".."
-      relative: true
-    source: path
-    version: "1.0.3"
+      path: "."
+      ref: HEAD
+      resolved-ref: a2f93ef34bab88d295252b0f4cd73c8a4ea5cf8a
+      url: "https://github.com/mkarenko/flutter_painter.git"
+    source: git
+    version: "1.0.2"
   flutter_test:
     dependency: "direct dev"
     description: flutter

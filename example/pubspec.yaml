@@ -25,7 +25,8 @@ dependencies:
     sdk: flutter
 
   flutter_painter:
-    path: ../
+    git:
+      url: https://github.com/mkarenko/flutter_painter.git
   phosphor_flutter: ^1.4.0
 
 dev_dependencies:

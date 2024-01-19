@@ -436,7 +436,6 @@ class _FlutterPainterExampleState extends State<FlutterPainterExample> {
                     LineFactory(): "Line",
                     ArrowFactory(): "Arrow",
                     DoubleArrowFactory(): "Double Arrow",
-                    // DoubleArrowTextFactory(): "Double Arrow With Text",
                     RectangleFactory(): "Rectangle",
                     OvalFactory(): "Oval",
                   }

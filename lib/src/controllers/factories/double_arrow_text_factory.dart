@@ -1,6 +1,6 @@
 import 'dart:ui';
 
-import 'package:flutter_painter/src/controllers/drawables/shape/double_arrrow_text_drawable.dart';
+import '../drawables/shape/double_arrrow_text_drawable.dart';
 import 'shape_factory.dart';
 
 class DoubleArrowTextFactory extends ShapeFactory<DoubleArrowTextDrawable> {
