@@ -1,3 +1,6 @@
+## [1.0.2]
+* Added `DoubleArrowTextDrawable`, simply it's double arrow with text in the middle.
+
 ## [1.0.1]
 * Fix a bug where `TextDrawable`s would incorrectly render on the final image ([Issue #19](https://github.com/omarhurani/flutter_painter/issues/19)).
 * Add Flutter linting using [flutter_lints](https://pub.dev/packages/flutter_lints) ([Issue #20](https://github.com/omarhurani/flutter_painter/issues/20)).
