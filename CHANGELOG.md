@@ -1,9 +1,7 @@
-## [1.0.3]
-* Changed the deprecated accent color.
-* Removed unsued import.
-
 ## [1.0.2]
 * Added `DoubleArrowTextDrawable`, simply it's double arrow with text in the middle.
+* Changed the deprecated accent color.
+* Removed unsued import.
 
 ## [1.0.1]
 * Fix a bug where `TextDrawable`s would incorrectly render on the final image ([Issue #19](https://github.com/omarhurani/flutter_painter/issues/19)).
