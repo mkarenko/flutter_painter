@@ -87,15 +87,10 @@ class DoubleArrowTextDrawable extends Sized1DDrawable implements ShapeDrawable {
 
     final midPoint = Offset(position.dx, position.dy);
 
-    final textStyle = TextStyle(
+    const textStyle = TextStyle(
       fontSize: 15,
       color: Colors.black,
       fontWeight: FontWeight.bold,
-      background: Paint()
-        ..color = Colors.white
-        ..strokeWidth = 16
-        ..style = PaintingStyle.stroke
-        ..strokeJoin = StrokeJoin.round,
     );
 
     final textSpan = TextSpan(
@@ -114,6 +109,21 @@ class DoubleArrowTextDrawable extends Sized1DDrawable implements ShapeDrawable {
       midPoint.dx - textPainter.width / 2,
       midPoint.dy - textPainter.height / 2,
     );
+
+    final backgroundWidth = textPainter.width + 16;
+    final backgroundHeight = textPainter.height + 16;
+
+    final backgroundRect = Rect.fromCenter(
+      center: midPoint,
+      width: backgroundWidth,
+      height: backgroundHeight,
+    );
+
+    final backgroundPaint = Paint()
+      ..color = Colors.white
+      ..style = PaintingStyle.fill;
+
+    canvas.drawRect(backgroundRect, backgroundPaint);
 
     textPainter.paint(canvas, textOffset);
   }
