@@ -15,12 +15,14 @@ class DoubleArrowTextDrawable extends Sized1DDrawable implements ShapeDrawable {
   ///
   /// If null, the arrow head size will be 3 times the [paint] strokeWidth.
   double? arrowHeadSize;
+  double? roundedValue;
   String? text;
 
   /// Creates a new [DoubleArrowTextDrawable] with the given [length], [paint] and [arrowHeadSize].
   DoubleArrowTextDrawable({
     Paint? paint,
     this.arrowHeadSize,
+    this.roundedValue,
     required double length,
     required Offset position,
     this.text,
@@ -119,7 +121,7 @@ class DoubleArrowTextDrawable extends Sized1DDrawable implements ShapeDrawable {
         width: backgroundWidth,
         height: backgroundHeight,
       ),
-      const Radius.circular(8.0),
+      Radius.circular(roundedValue ?? 10),
     );
 
     final backgroundPaint = Paint()
@@ -144,6 +146,7 @@ class DoubleArrowTextDrawable extends Sized1DDrawable implements ShapeDrawable {
     bool? locked,
     double? arrowHeadSize,
     String? text,
+    double? roundedValue,
   }) {
     return DoubleArrowTextDrawable(
       hidden: hidden ?? this.hidden,
@@ -156,6 +159,7 @@ class DoubleArrowTextDrawable extends Sized1DDrawable implements ShapeDrawable {
       locked: locked ?? this.locked,
       arrowHeadSize: arrowHeadSize ?? this.arrowHeadSize,
       text: text ?? this.text,
+      roundedValue: roundedValue ?? this.roundedValue,
     );
   }
 
