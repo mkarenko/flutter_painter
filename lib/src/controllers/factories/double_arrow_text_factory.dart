@@ -4,11 +4,12 @@ import '../drawables/shape/double_arrrow_text_drawable.dart';
 import 'shape_factory.dart';
 
 class DoubleArrowTextFactory extends ShapeFactory<DoubleArrowTextDrawable> {
-  DoubleArrowTextFactory({this.arrowHeadSize, this.text}) : super();
+  DoubleArrowTextFactory({this.arrowHeadSize, this.text, this.roundedValue})
+      : super();
 
   double? arrowHeadSize;
   String? text;
-
+  double? roundedValue;
   @override
   DoubleArrowTextDrawable create(Offset position, [Paint? paint]) {
     return DoubleArrowTextDrawable(
@@ -16,6 +17,7 @@ class DoubleArrowTextFactory extends ShapeFactory<DoubleArrowTextDrawable> {
         position: position,
         paint: paint,
         arrowHeadSize: arrowHeadSize,
-        text: text);
+        text: text,
+        roundedValue: roundedValue);
   }
 }
