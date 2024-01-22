@@ -113,17 +113,20 @@ class DoubleArrowTextDrawable extends Sized1DDrawable implements ShapeDrawable {
     final backgroundWidth = textPainter.width + 16;
     final backgroundHeight = textPainter.height + 16;
 
-    final backgroundRect = Rect.fromCenter(
-      center: midPoint,
-      width: backgroundWidth,
-      height: backgroundHeight,
+    final backgroundRect = RRect.fromRectAndRadius(
+      Rect.fromCenter(
+        center: midPoint,
+        width: backgroundWidth,
+        height: backgroundHeight,
+      ),
+      const Radius.circular(8.0),
     );
 
     final backgroundPaint = Paint()
       ..color = Colors.white
       ..style = PaintingStyle.fill;
 
-    canvas.drawRect(backgroundRect, backgroundPaint);
+    canvas.drawRRect(backgroundRect, backgroundPaint);
 
     textPainter.paint(canvas, textOffset);
   }
