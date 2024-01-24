@@ -6,7 +6,7 @@ import '../sized1ddrawable.dart';
 import '../../../extensions/paint_copy_extension.dart';
 
 /// A drawable of a arrow on both side shape.
-class DoubleArrowTextDrawable extends Sized1DDrawable implements ShapeDrawable {
+class TextArrowDrawable extends Sized1DDrawable implements ShapeDrawable {
   /// The paint to be used for the line drawable.
   @override
   Paint paint;
@@ -18,8 +18,8 @@ class DoubleArrowTextDrawable extends Sized1DDrawable implements ShapeDrawable {
   double? roundedValue;
   String? text;
 
-  /// Creates a new [DoubleArrowTextDrawable] with the given [length], [paint] and [arrowHeadSize].
-  DoubleArrowTextDrawable({
+  /// Creates a new [TextArrowDrawable] with the given [length], [paint] and [arrowHeadSize].
+  TextArrowDrawable({
     Paint? paint,
     this.arrowHeadSize,
     this.roundedValue,
@@ -135,7 +135,7 @@ class DoubleArrowTextDrawable extends Sized1DDrawable implements ShapeDrawable {
 
   /// Creates a copy of this but with the given fields replaced with the new values.
   @override
-  DoubleArrowTextDrawable copyWith({
+  TextArrowDrawable copyWith({
     bool? hidden,
     Set<ObjectDrawableAssist>? assists,
     Offset? position,
@@ -148,7 +148,7 @@ class DoubleArrowTextDrawable extends Sized1DDrawable implements ShapeDrawable {
     String? text,
     double? roundedValue,
   }) {
-    return DoubleArrowTextDrawable(
+    return TextArrowDrawable(
       hidden: hidden ?? this.hidden,
       assists: assists ?? this.assists,
       position: position ?? this.position,
